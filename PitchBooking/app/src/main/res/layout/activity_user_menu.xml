@@ -102,7 +102,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/send"
-                    android:backgroundTint="@color/white" />
+                    android:backgroundTint="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -143,8 +143,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/pitch_vector"
-                    android:onClick="onCurrentBookingPageClick"/>
+                    android:background="@drawable/pitch_vector"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -187,8 +186,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/history"
-                    android:backgroundTint="@color/white"
-                    android:onClick="onHistoryBookingPageClick"/>
+                    android:backgroundTint="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
