@@ -7,10 +7,11 @@
     tools:context=".activity.activity.UserMenu">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="60dp"
@@ -34,8 +35,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,15 +50,15 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:onClick="onProfilePage"
             android:layout_alignParentEnd="true"
             android:background="@drawable/grey_circular_border"
+            android:onClick="onProfilePage"
             android:padding="8dp"
             android:src="@drawable/person" />
 
 
-
     </RelativeLayout>
+
 
 
     <GridLayout
@@ -75,47 +76,7 @@
         app:layout_constraintVertical_bias="0.0"
         app:layout_editor_absoluteX="0dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#E3E2E7"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="6dp">
 
-            <LinearLayout
-                android:onClick="requested_bookingButton"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:background="@color/blue"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/send"
-                    android:backgroundTint="@color/white"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/requested_booking"
-                    android:textColor="@color/white"
-                    android:textAlignment="center"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
@@ -234,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/room_service"
+                    android:text="Pitch Service"
                     android:textSize="14sp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
@@ -247,5 +208,16 @@
 
 
     </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/pitchbooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
