@@ -9,14 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.pitchbooking.R;
-import com.example.pitchbooking.activity.Model.Pitch;
-import com.example.pitchbooking.activity.adapter.pitchListAdapter;
+import com.example.pitchbooking.activity.Model.Account.Account;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomePageActivity extends AppCompatActivity {
-    List<Pitch> pitches;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +26,7 @@ public class HomePageActivity extends AppCompatActivity {
 //        pitches.add(new Pitch("san", R.drawable.pitchbooking, 3));
 //        rvPitchList.setAdapter(new pitchListAdapter(pitches));
 //        rvPitchList.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     private void initRecyclerview() {
@@ -37,8 +36,11 @@ public class HomePageActivity extends AppCompatActivity {
 
 
     public void onMenuClick(View view) {
+        Intent intentGet = getIntent();
+        Account acc = (Account) intentGet.getSerializableExtra("Customer");
+
         Intent intent = new Intent(HomePageActivity.this, UserMenu.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("Customer", acc);
         startActivity(intent);
         finish();
     }

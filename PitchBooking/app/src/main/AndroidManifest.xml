@@ -13,6 +13,17 @@
         android:theme="@style/Theme.PitchBooking"
         tools:targetApi="31">
         <activity
+            android:name=".activity.activity.BookingHistory"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity.CurrentBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity.CurrentBooking"
+            android:exported="false"
+            android:label="@string/title_activity_current_booking"
+            android:theme="@style/Theme.PitchBooking" />
+        <activity
             android:name=".activity.activity.UpdatePitch"
             android:exported="false" />
         <activity
