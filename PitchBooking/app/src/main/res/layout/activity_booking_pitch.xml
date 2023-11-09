@@ -47,7 +47,6 @@
                     android:weightSum="100">
 
                     <TextView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="30"
@@ -107,7 +106,7 @@
 
                     <TextView
                         android:id="@+id/Chon_gio"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="20"
                         android:background="@color/blue"
@@ -169,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="30"
                         android:background="@color/blue"
-                        android:padding="10dp"
+                        android:padding="11dp"
                         android:text="Pitch"
                         android:textAlignment="textStart"
                         android:textColor="@color/white"
@@ -182,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="70"
                         android:background="@color/blue"
-                        android:padding="10dp"
+                        android:padding="9dp"
                         android:text="chọn sân"
                         android:textAlignment="textStart"
                         android:textColor="@color/white"
@@ -229,6 +228,20 @@
                         android:drawableTint="@color/white"
                         android:padding="5dp"
                         android:text="booking"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/apcardCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="@color/blue"
+                        android:drawableEnd="@drawable/approve"
+                        android:drawableTint="@color/white"
+                        android:padding="5dp"
+                        android:text="Check"
                         android:textColor="@color/white"
                         android:textSize="12sp"
                         android:textStyle="normal" />

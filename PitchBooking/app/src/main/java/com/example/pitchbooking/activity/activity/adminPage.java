@@ -35,4 +35,11 @@ public class adminPage extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void booking_historyButton(View view) {
+        Intent intent = new Intent(adminPage.this, Admin_AllBooking.class);
+        startActivity(intent);
+        finish();
+    }
+
 }

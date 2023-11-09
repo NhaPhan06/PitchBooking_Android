@@ -52,8 +52,11 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     public void onBookingClick(View view) {
+        Intent intentGet = getIntent();
+        Account acc = (Account) intentGet.getSerializableExtra("Customer");
+
         Intent intent = new Intent(HomePageActivity.this, BookingPitch.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("Customer", acc);
         startActivity(intent);
         finish();
     }

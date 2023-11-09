@@ -42,10 +42,10 @@ public class LoginPageActivity extends AppCompatActivity {
                 account = Login(email, password);
                 if (account != null){
                     if (account.role.equals("admin")){
-
+                        onLoginActivity(v, account, 0);
                     }
                     else {
-                        onLoginActivity(v, account);
+                        onLoginActivity(v, account, 1);
                     }
                 }
                 // Nếu sai
@@ -77,9 +77,15 @@ public class LoginPageActivity extends AppCompatActivity {
         finish();
     }
 
-    public void onLoginActivity(View view, Account acc) {
-        Intent intent = new Intent(LoginPageActivity.this, HomePageActivity.class);
-        intent.putExtra("Customer", acc);
+    public void onLoginActivity(View view, Account acc, int i) {
+        Intent intent;
+        if (i == 1){
+            intent = new Intent(LoginPageActivity.this, HomePageActivity.class);
+            intent.putExtra("Customer", acc);
+        }
+        else {
+            intent = new Intent(LoginPageActivity.this, adminPage.class);
+        }
         startActivity(intent);
         finish();
     }

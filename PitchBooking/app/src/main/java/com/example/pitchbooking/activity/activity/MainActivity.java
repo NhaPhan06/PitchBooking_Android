@@ -54,17 +54,13 @@ public class MainActivity extends AppCompatActivity {
                 "('Sân 1', 5), " +
                 "('Sân 2', 5), " +
                 "('Sân 3', 7)");
-        database.QueryData("INSERT INTO Schedule (CustomerId, PitchId, starTime, endTime, date, status) VALUES " +
-                "(1, 1, 10, 12, '2023-11-01', 'completed'), " +
-                "(2, 2, 15, 17, '2023-11-02', 'completed')");
 
         database.QueryData("INSERT INTO Schedule (CustomerId, PitchId, starTime, endTime, date, status) VALUES " +
-                "('1', '1', '08:00:00', '10:00:00', '2023-11-01', 'DONE'), " +
-                "('2', '2', '08:00:00', '10:00:00', '2023-11-01', 'DONE'), " +
-                "('2', '2', '14:00:00', '16:00:00', '2023-11-12', 'PROCESS') ");
+                "('2', '1', '08:00:00', '10:00:00', '01-11-2023', 'DONE'), " +
+                "('2', '2', '08:00:00', '10:00:00', '01-11-2023', 'DONE'), " +
+                "('2', '2', '14:00:00', '16:00:00', '01-12-2023', 'PROCESS') ");*/
 
-        database.QueryData("INSERT INTO Schedule (CustomerId, PitchId, starTime, endTime, date, status) VALUES " +
-                "('2', '2', '14:30:00', '16:00:00', '2023-11-12', 'PROCESS') ");*/
+
 
 
     }

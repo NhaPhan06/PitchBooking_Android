@@ -179,7 +179,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/history"
-                    android:backgroundTint="@color/blue"/>
+                    android:backgroundTint="@color/blue" />
 
                 <TextView
                     android:layout_width="wrap_content"
