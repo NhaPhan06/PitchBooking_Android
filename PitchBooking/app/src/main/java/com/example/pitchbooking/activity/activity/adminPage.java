@@ -42,4 +42,10 @@ public class adminPage extends AppCompatActivity {
         finish();
     }
 
+    public void view_customersButton(View view) {
+        Intent intent = new Intent(adminPage.this, AdminListCustomer.class);
+        startActivity(intent);
+        finish();
+    }
+
 }

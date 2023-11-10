@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import com.example.pitchbooking.R;
@@ -55,5 +56,13 @@ public class Admin_AllBooking extends AppCompatActivity {
             arr.add(new AllBooking(id, pitchId, name , start, end, date));
         }
         adapter.notifyDataSetChanged();
+    }
+
+
+    public void onMenuClickAdmin(View view) {
+        Intent intent = new Intent(Admin_AllBooking.this, adminPage.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
     }
 }

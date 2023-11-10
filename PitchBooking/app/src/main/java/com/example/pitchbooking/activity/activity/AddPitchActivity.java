@@ -16,6 +16,10 @@ public class AddPitchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_pitch);
+
+
+
+
         backbtn = findViewById(R.id.btnbackPitch);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
